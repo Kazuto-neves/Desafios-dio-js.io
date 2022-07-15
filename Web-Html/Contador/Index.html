@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/styles.css" />
+    <title>Contador</title>
+</head>
+
+<body>
+    <h1>Contador</h1>
+    <div id="counter">
+        <form action="">
+            <label class="lText" for="min">Menor Valor:</label>
+            <input class="iText" type="number" id="min" name="min" min="-99" max="99">
+            <br>
+            <label class="lText" for="max">Maior Valor:</label>
+            <input class="iText" type="number" id="max" name="max" min="-98" max="99">
+        </form>
+        <div id="cont">
+            <button id="subtrair" name="subtrair">-</button>
+            <span id="currentNumber">0</span>
+            <button id="adicionar" name="adicionar">+</button>
+        </div>
+    </div>
+    <script src="./Js/script.js"></script>
+</body>
+
+</html>

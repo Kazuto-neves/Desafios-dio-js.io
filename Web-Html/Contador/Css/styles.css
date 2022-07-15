@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(153, 153, 153);
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(140, 140, 140);
+    background-color: rgb(153, 153, 153);
+    color: rgb(40, 40, 40);
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+button:hover{
+    border: 2px solid rgb(80, 90, 140);
+    background-color: rgb(50, 50, 90);
+    color: rgb(255, 250, 250);
+    transition: .6s;
+}
+
+button:active{
+    border: 2px solid rgb(90, 140, 80);
+    background-color: rgb(50, 90, 53);
+    color: rgb(200, 250, 204);
+    transition: .6s;
+}
+
+#counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lText {
+    font-size: 30px;
+    margin-inline: 30px;
+    padding-bottom: 2rem;
+}
+
+.iText {
+    font-size: 30px;
+    width: 60px;
+    margin-bottom: 2rem;
+    color: rgb(50, 50, 90);
+}
+
+#max {
+    margin-inline: 12px;
+}
+
+#cont {
+    display: flex;
+}
+
+#currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 20pt;
+    color: blue;
+}
