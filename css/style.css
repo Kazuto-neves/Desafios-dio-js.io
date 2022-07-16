@@ -50,6 +50,8 @@ h2{
 #list{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 990px;
 }
 
 .button{
