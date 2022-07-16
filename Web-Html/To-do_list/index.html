@@ -12,11 +12,11 @@
 <body onload="addRotina()">
     <h1>To-do List</h1>
     <div id="container">
-        <div id="InputRotina">
-            <input type="text" id="textRotina" placeholder="Digite uma nova rotina">
-            <input type="button" id="btnRotina" value="adicionar">
-        </div>
-        <div id="ListRotina"></div>
+        <form id="task-form">
+        	<input id="task-input" name="tarefa" type="text" placeholder="Digite aqui sua tarefa" />
+        	<button type="submit">Adicionar</button>
+        </form>
+        <div id="tasks"></div>
     </div>
     <script src="./Js/script.js"></script>
 </body>

@@ -18,61 +18,61 @@ body {
     align-items: center;
 }
 
-#InputRotina{
+#task-form {
     display: flex;
     background-color: rgb(200, 200, 200);
     border-bottom: #000066 solid 2px;
     padding: 2px;
 }
 
-#textRotina  {
+#task-input {
     font-size: 30px;
     background-color: transparent;
     border: none;
 }
 
-#btnRotina {
+button {
     font-size: 30px;
     background-color: transparent;
     border: none;
 }
 
-#textRotina:not(:focus) {
+#task-input:not(:focus) {
     color: red;
     transition: .6s;
 }
 
-#textRotina:focus {
+#task-input:focus {
     color: #000066;
     transition: .6s;
 }
 
-#btnRotina:hover{
+button:hover{
     background-color: rgb(160, 160, 160);
     color: #000066;
     transition: .6s;
 }
 
-#btnRotina:active{
+button:active{
     background-color: rgb(10, 10, 10);
     color: rgb(200, 200, 200);
     transition: .6s;
 }
 
-#ListRotina{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#tasks{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
-.rotina {
-    font-size: 30px;
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
-.lRotina{
-    font-size: 30px;
-}
-
-.rotina:checked ~ label {
-   text-decoration: line-through;
+:checked + label {
+  text-decoration: line-through;
+  color: red;
 }
