@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(153, 153, 153);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    align-items: center;
+}
+
+#subcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(200, 200, 200);
+    border-bottom: #000066 solid 2px;
+    padding: 2px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1114px;
+}
+
+.Valor {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.Valor:not(:focus) {
+    color: red;
+    transition: .6s;
+}
+
+.Valor:focus {
+    color: #000066;
+    transition: .6s;
+}
+
+label,span {
+    font-size: 30px;
+    Color: #000066;
+    padding-bottom: 10px;
+}
+
+#Comp{
+    font-size: 30px;
+    height: 4rem;
+    width: 12rem;
+    border: none;
+    background-color: transparent;
+    color: blue;
+}
+
+#Comp:hover{
+    background-color: #06f;
+    color: rgba(255,255,255,0.5);
+    transition: .6s;
+}
+
+#Comp:active{
+    background-color: rgba(10,10,10,0.5);
+    color: #06f;
+    transition: .6s;
+}
