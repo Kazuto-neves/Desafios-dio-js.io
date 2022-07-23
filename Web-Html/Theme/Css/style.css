@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+:root{
+    --clr:#ffff00;
+}
+
+body {
+    margin: 0;
+	font-family: 'Quicksand';
+}
+
+body.light-mode {
+	background-color: #e5e8e8;
+	color: #4e545c;
+
+}
+
+body.dark-mode {
+	background-color: #000401;
+	color: #e5e8e8;
+}
+
+main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+button.light-mode {
+    transition: .6s;
+    background-color: #000401;
+}
+
+button.light-mode:hover{
+    transition: .6s;
+    background-color: #131313;
+}
+
+button.light-mode:active{
+    transition: .6s;
+    background-color: #3b3b3b;
+}
+
+button.dark-mode {
+    transition: .6s;
+    background-color: #8d9797;
+}
+
+button.dark-mode:hover{
+    transition: .6s;
+    background-color: #595f5f;
+}
+
+button.dark-mode:active{
+    transition: .6s;
+    background-color: #353a3a;
+}
+
+button.light-mode #icon{
+    color: #3f3f3f;
+}
+
+button.dark-mode #icon{
+    color: #3f3f3f;
+}
+
+button.light-mode:hover,button.dark-mode:hover{
+    transition: .6s;
+    box-shadow: 0 0 10px var(--clr),0 0 30px var(--clr),0 0 60px var(--clr),0 0 100px var(--clr);
+}
+
+button.light-mode:hover i,button.dark-mode:hover i{
+    transition: .6s;
+    color: var(--clr);
+}
+
+button.light-mode:active,button.dark-mode:active{
+    transition: .6s;
+    box-shadow: 0 0 20px var(--clr),0 0 60px var(--clr),0 0 120px var(--clr),0 0 200px var(--clr);
+}
+
+#icon i{
+    font-size: 3rem;
+}
+
+footer {
+    width: 100%;
+    padding: 16px;
+    position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+footer.light-mode {
+	background-color: #4e545c;
+	color: #e5e8e8;
+}
+
+footer.dark-mode {
+	background-color: #8d9797;
+	color: #000401;
+}
