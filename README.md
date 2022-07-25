@@ -1,5 +1,5 @@
-# Desafios-dio.io
-Repositorio com todos os meus projetos/Desafios da Dio
+# Desafios-dio-js.io
+Repositorio com todos os meus projetos/Desafios da Dio Impulso
 
 # Estou sempre atualisando meu conhecimento
 
