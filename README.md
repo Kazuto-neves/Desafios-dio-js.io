@@ -1,5 +1,5 @@
 # Desafios-dio-js.io
-Repositorio com todos os meus projetos/Desafios da Dio Impulso
+Olá :wave:, como está? Bem vindo ao meu repositorio de atividades e desafios
 
 ## Desafios de codigo 
 
