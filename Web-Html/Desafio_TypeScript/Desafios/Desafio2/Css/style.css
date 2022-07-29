@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(153, 153, 153);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 200, 200);
+    padding: 2px;
+    margin-bottom: 3rem;
+}
+
+.input{
+    font-size: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #000066 solid 2px;
+}
+
+.Result {
+    font-size: 30px;
+    background-color: #000066;
+    color: rgb(160, 160, 160);
+    border: none;
+}
+
+.input:not(:focus) {
+    color: red;
+    transition: .6s;
+}
+
+.input:focus {
+    color: #000066;
+    transition: .6s;
+}
+
+.Result:hover{
+    background-color: rgb(160, 160, 160);
+    color: #000066;
+    transition: .6s;
+}
+
+.Result:active{
+    background-color: rgb(10, 10, 10);
+    color: rgb(200, 200, 200);
+    transition: .6s;
+}
+
+#response{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000066;
+    color: white;
+}
