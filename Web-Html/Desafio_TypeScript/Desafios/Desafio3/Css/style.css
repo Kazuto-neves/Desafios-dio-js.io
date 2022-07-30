@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(153, 153, 153);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 200, 200);
+    padding: 2px;
+    margin-bottom: 3rem;
+}
+
+h4{
+    font-size: 30px;
+    color: red;
+}
+
+#soma{
+    font-size: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #000066 solid 2px;
+}
+
+button {
+    font-size: 30px;
+    background-color: #000066;
+    color: rgb(160, 160, 160);
+    border: none;
+}
+
+#soma:not(:focus) {
+    color: red;
+    transition: .6s;
+}
+
+#soma:focus {
+    color: #000066;
+    transition: .6s;
+}
+
+button:hover{
+    background-color: rgb(160, 160, 160);
+    color: #000066;
+    transition: .6s;
+}
+
+button:active{
+    background-color: rgb(10, 10, 10);
+    color: rgb(200, 200, 200);
+    transition: .6s;
+}
+
+#response{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
