@@ -74,5 +74,5 @@ button:active{
 
 :checked + label {
   text-decoration: line-through;
-  color: red;
+  color: rgb(150,0,0);
 }

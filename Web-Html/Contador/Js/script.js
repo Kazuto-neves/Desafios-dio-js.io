@@ -1,7 +1,7 @@
 var currentNumberWrapper = document.getElementById('currentNumber');
 var currentNumber = 0;
-let minRange = document.getElementById('min').value;
-let maxRange = document.getElementById('max').value;
+let minRange = document.getElementById('min');
+let maxRange = document.getElementById('max');
 
 const elementDOWN = document.getElementById("subtrair");
 const elementUP = document.getElementById("adicionar");
@@ -10,7 +10,7 @@ elementDOWN.addEventListener("click", decrement);
 elementUP.addEventListener("click", increment);
 
 function valid(x){
-    if(x>=minRange && x<=maxRange){
+    if(x>=minRange.value && x<=maxRange.value){
         return true;
     }else{
         return false;
@@ -18,7 +18,7 @@ function valid(x){
 }
 
 function color(x){
-    x<0?currentNumberWrapper.style.cssText = "color: red":currentNumberWrapper.style.cssText = "color: blue";
+    x<0?currentNumberWrapper.style.cssText = "color: rgb(100,0,0)":currentNumberWrapper.style.cssText = "color: rgb(0,0,100)";
 }
 
 function increment(){

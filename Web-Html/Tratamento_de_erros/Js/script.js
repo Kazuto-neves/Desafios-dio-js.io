@@ -10,13 +10,13 @@ function validaArray(array,num){
 
         return array;
     } catch (error) {
-        if (error instanceof ReferenceError) alert(`Ocorreu um ReferenceError ${error.message}`);
+        if (error instanceof ReferenceError) alert(`Ocorreu um ReferenceError`);
 
-        else if (error instanceof TypeError) alert(`Ocorreu um TypeError ${error.message}`);
+        else if (error instanceof TypeError) alert(`Ocorreu um TypeError`);
 
-        else if (error instanceof RangeError) alert(`Ocorreu um RangeError ${error.message}`);
+        else if (error instanceof RangeError) alert(`Ocorreu um RangeError`);
 
-        else alert(`Ocorreu um Erro inesperado ${error}`);
+        else alert(`Ocorreu um Erro inesperado`);
 
     }
 }

@@ -70,6 +70,6 @@ body {
   align-items: center;
   margin-bottom: 10px;
   font-size: 30px;
-  color: red;
+  color: rgb(150,0,0);
   transition: .6s;
 }
