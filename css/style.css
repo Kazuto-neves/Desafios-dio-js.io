@@ -1,3 +1,7 @@
+:root{
+    --clr:#ffff00;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +10,16 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
+}
+
+body.light-mode{
+    background-color: rgb(243, 243, 243);
+}
+
+body.dark-mode{
+    background-color: rgb(12, 12, 12);
 }
 
 #menu{
@@ -19,7 +30,6 @@ body{
 
 #container{
     padding: 2rem 0 35rem;
-    background-color: white;
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -28,23 +38,51 @@ body{
     flex-direction: column;
 }
 
+#container.light-mode{
+    background-color: white;
+}
+
+#container.dark-mode{
+    background-color: black;
+}
+
 h2{
     font-size: 40px;
     padding-inline: 2rem;
+}
+
+h2.light-mode{
+    color: black;
+}
+
+h2.dark-mode{
+    color: white;
 }
 
 #theme{
    font-size: 40px;
 }
 
-#theme:hover{
-    color: #807d01;
-    transition: .6s;
+#them.light-mode{
+    color: black;
 }
 
-#theme:active{
-    color: #9e9b02;
+#theme.dark-mode{
+    color: white;
+}
+
+#theme.light-mode:hover i,#theme.dark-mode:hover i{
     transition: .6s;
+    color: #807d01;
+}
+
+#theme.light-mode:active i,#theme.dark-mode:active i{
+    transition: .6s;
+    color: #9e9b02;
+}
+
+#theme i{
+    font-size: 3rem;
 }
 
 #list{
@@ -65,15 +103,25 @@ h2{
     text-decoration: none;
     font-size: 30px;
     margin-bottom: 2rem;
+    flex-basis: 20rem;
 }
 
-.button:hover{
+.button.light-mode:hover{
     background-color: #09142a;
     transition: .6s;
 }
 
-.button:active{
+.button.dark-mode:hover{
+    background-color: #183772;
+}
+
+.button.light-mode:active{
     background-color: #1a3d7f;
+    transition: .6s;
+}
+
+.button.dark-mode:active{
+    background-color: #0e2146;
     transition: .6s;
 }
 
@@ -105,5 +153,6 @@ h2{
     
     .button{
         margin-bottom: 2rem;
+        flex-basis: 6rem;
     }
 }
