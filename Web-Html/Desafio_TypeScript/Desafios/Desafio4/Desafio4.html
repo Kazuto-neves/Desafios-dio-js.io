@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Desafio 4</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="head-container">
+            <h1>Desafio 4</h1>
+            <h1><img src="./Img/logo.svg" alt="The Movie DB"></h1>
+        </div>
+        <div id="subcontainer">
+            <div id="login-container">
+                <input class="input" id="login" placeholder="Login" onchange="preencherLogin(event)">
+                <input class="input" id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+                <input class="input" id="api-key" placeholder="Api Key" onchange="preencherApi()">
+                <button id="login-button" disabled>Login</button>
+            </div>
+            <div id="search-container">
+                <input class="input" id="search" placeholder="Escreva...">
+                <button id="search-button">Pesquisar Filme</button>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/Desafio4.js"></script>
+</body>
+
+</html>
