@@ -5,8 +5,8 @@ RESULT.addEventListener("click", ArrayPares);
 
 function ArrayPares() {
   let response = document.getElementById("text");
-  let arrayNumber;
-  let arrayPar;
+  let arrayNumber = [];
+  let arrayPar = [];
   let arrayN = [];
   arrayN = NUMS.value.split(/-+/);
   if (arrayN.length == 0) {

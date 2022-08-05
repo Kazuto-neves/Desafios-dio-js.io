@@ -1,4 +1,4 @@
-var apiKey = '4ec587e4e826cf40a4f691b2d517310f';
+var apiKey = '3f301be7381a03ad8d352314dcc3ec1d';
 var apiKey:string;
 var requestToken:string;
 var username:string;
