@@ -1,3 +1,3 @@
 ### Exemplo de execução
 
-Para testar você mesmo [Clique aqui](https://kazuto-neves.github.io/Desafios-dio-js.io/Web-Html/Palindromo/index.html).
+Para testar você mesmo [Clique aqui](https://kazuto-neves.github.io/Desafios-dio-js.io/Web-Html/ExerciciosJS/Palindromo/index.html).
