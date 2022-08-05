@@ -1,4 +1,4 @@
-const BASE_URL = 'https://thatcopy.pw/catapi/rest/';
+const BASE_URL = 'https://api.thecatapi.com/v1/images/search/';
 const CATBTN = document.getElementById('change-cat');
 const CATIMG = document.getElementById('cat');
 
@@ -7,7 +7,7 @@ const getCats = async () => {
     const DATA = await fetch(BASE_URL);
     const JSON = await DATA.json();
 
-    return JSON.webpurl;
+    return JSON[0].url;
   } catch (error) {
     console.log(error.message);
   }
