@@ -1,4 +1,4 @@
-var apiKey = '3f301be7381a03ad8d352314dcc3ec1d';
+//var apiKey = '4ec587e4e826cf40a4f691b2d517310f';
 var apiKey:string;
 var requestToken:string;
 var username:string;
@@ -24,7 +24,9 @@ searchButton.addEventListener('click', async () => {
   }
   let query = document.getElementById('search') as HTMLInputElement
   let listaDeFilmes:any = await procurarFilme(query.value);
+  let div = document.createElement('div');
   let ul = document.createElement('ul');
+  div.id = "container-lista"
   ul.id = "lista"
   for (const item of listaDeFilmes.results) {
     let li = document.createElement('li');
@@ -32,7 +34,8 @@ searchButton.addEventListener('click', async () => {
     ul.appendChild(li)
   }
   console.log(listaDeFilmes);
-  searchContainer.appendChild(ul);
+  div.appendChild(ul)
+  searchContainer.appendChild(div);
 })
 
 function preencherSenha() {

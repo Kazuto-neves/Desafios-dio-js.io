@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var apiKey = '3f301be7381a03ad8d352314dcc3ec1d';
+//var apiKey = '4ec587e4e826cf40a4f691b2d517310f';
 var apiKey;
 var requestToken;
 var username;
@@ -62,7 +62,7 @@ loginButton.addEventListener('click', function () { return __awaiter(void 0, voi
     });
 }); });
 searchButton.addEventListener('click', function () { return __awaiter(void 0, void 0, void 0, function () {
-    var lista, query, listaDeFilmes, ul, _i, _a, item, li;
+    var lista, query, listaDeFilmes, div, ul, _i, _a, item, li;
     return __generator(this, function (_b) {
         switch (_b.label) {
             case 0:
@@ -74,7 +74,9 @@ searchButton.addEventListener('click', function () { return __awaiter(void 0, vo
                 return [4 /*yield*/, procurarFilme(query.value)];
             case 1:
                 listaDeFilmes = _b.sent();
+                div = document.createElement('div');
                 ul = document.createElement('ul');
+                div.id = "container-lista";
                 ul.id = "lista";
                 for (_i = 0, _a = listaDeFilmes.results; _i < _a.length; _i++) {
                     item = _a[_i];
@@ -83,7 +85,8 @@ searchButton.addEventListener('click', function () { return __awaiter(void 0, vo
                     ul.appendChild(li);
                 }
                 console.log(listaDeFilmes);
-                searchContainer.appendChild(ul);
+                div.appendChild(ul);
+                searchContainer.appendChild(div);
                 return [2 /*return*/];
         }
     });

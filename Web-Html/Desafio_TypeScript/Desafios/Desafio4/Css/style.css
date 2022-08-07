@@ -45,6 +45,36 @@ h4 {
     margin-left: 20px
 }
 
+#container-lista {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+
+#lista::-webkit-scrollbar {
+    width: 11px;
+}
+
+#lista {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+#lista::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+#lista::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+#container-lista {
+    background: lightgrey;
+    overflow: scroll;
+    height: 140px;
+}
+
 .input {
     font-size: 30px;
     background-color: transparent;
@@ -53,6 +83,7 @@ h4 {
     border-right: none;
     border-bottom: #000066 solid 2px;
     margin-bottom: 10px;
+    height: 40px;
 }
 
 button {
@@ -60,6 +91,7 @@ button {
     background-color: #000066;
     color: rgb(160, 160, 160);
     border: none;
+    height: 40px;
 }
 
 .input:not(:focus) {
