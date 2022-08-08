@@ -28,6 +28,7 @@ h1 {
 
 #subcontainer {
     display: flex;
+    flex-direction: column;
 }
 
 #login-container {
@@ -42,7 +43,7 @@ h4 {
 }
 
 #search-container {
-    margin-left: 20px
+    margin-top: 20px
 }
 
 #container-lista {
@@ -84,6 +85,10 @@ h4 {
     border-bottom: #000066 solid 2px;
     margin-bottom: 10px;
     height: 40px;
+}
+
+.input#search{
+    height: 34px;
 }
 
 button {
