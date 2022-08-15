@@ -5,7 +5,7 @@
 	--clr2: #ffa500;
 	--clr3: #daa520;
 	--clr4: #fff000; 
-	--gradient-gold: linear-gradient(45deg, #b58500, #c18f00, #cd9a0e, #daa520, #e7b02e, #f3bb3a, #ffc746,#f3bb3a,#e7b02e,#daa520,#cd9a0e,#c18f00);
+	--gradient-gold: linear-gradient(45deg, var(--clr1), var(--clr2), var(--clr3), var(--clr4), var(--clr3), var(--clr2));
 }
 
 @keyframes glowing {
@@ -17,13 +17,13 @@
 @keyframes anim-glow {
 
 	0%,100%{
-		box-shadow: 0 0 2.5px var(--clr1), 0 0 7.5px var(--clr1), 0 0 15px var(--clr1), 0 0 25px var(--clr1);
+		box-shadow: 0 0 1.25px var(--clr1), 0 0 3.75px var(--clr1), 0 0 7.5px var(--clr1), 0 0 12.5px var(--clr1);
 	}25% {
-		box-shadow: 0 0 5px var(--clr2), 0 0 15px var(--clr2), 0 0 30px var(--clr2), 0 0 50px var(--clr2);
+		box-shadow: 0 0 2.5px var(--clr2), 0 0 7.5px var(--clr2), 0 0 15px var(--clr2), 0 0 25px var(--clr2);
 	}50% {
-		box-shadow: 0 0 10px var(--clr3), 0 0 30px var(--clr3), 0 0 60px var(--clr3), 0 0 100px var(--clr3);
+		box-shadow: 0 0 5px var(--clr3), 0 0 15px var(--clr3), 0 0 30px var(--clr3), 0 0 50px var(--clr3);
 	}75%{
-		box-shadow: 0 0 5px var(--clr4), 0 0 15px var(--clr4), 0 0 30px var(--clr4), 0 0 50px var(--clr4);
+		box-shadow: 0 0 2.5px var(--clr4), 0 0 7.5px var(--clr4), 0 0 15px var(--clr4), 0 0 25px var(--clr4);
 	}
 }
 
@@ -39,13 +39,15 @@ body {
 }
 
 img {
-	max-width: 600px;
+	max-width: 300px;
 	border-radius: 30px;
 	animation: anim-glow 5s linear infinite;
 }
 
 main {
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button {
@@ -60,6 +62,7 @@ button {
     z-index: 0;
     border-radius: 10px;
 	margin-top: 3rem;
+    font-size: 30px;
 }
 
 button:before {
@@ -102,26 +105,3 @@ button:after {
     top: 0;
     border-radius: 10px;
 }
-
-/*#logo:hover:before {
-    opacity: 1;
-}*/
-
-
-
-/*button {
-	border: 0;
-	font-size: 1.2rem;
-	font-weight: 500;
-	padding: 16px;
-	background: #222266;
-	color: white;
-	margin: 20px 0;
-	cursor: pointer;
-	transition: all 0.5s ease-in-out;
-	z-index: 1;
-}
-
-button:hover {
-	background: #2222ff;
-}*/
